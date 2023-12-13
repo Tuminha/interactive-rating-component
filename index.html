@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- handles IE -->
+
+
+  <!-- Font https://fonts.google.com/specimen/Overpass -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="main.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body>
+
+  <!-- First page of the rating app-->
+  <section id="rating-state">
+    
+    <div class="oval">  
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <div id="rating">
+      <p>Rating:</p>
+      <div class="numbers">
+      <span class="rating-option" data-value="1">1</span>
+      <span class="rating-option" data-value="2">2</span>
+      <span class="rating-option" data-value="3">3</span>
+      <span class="rating-option" data-value="4">4</span>
+      <span class="rating-option" data-value="5">5</span>
+    </div>
+    </div>
+    <button id="submit-rating">Submit</button>
+ 
+  </section>
+
+  <!-- Second page of the rating app or Thank you page-->
+  
+  <section class="thank-you-after-rating" id="thank-you-state" style="display: none;">
+    <div class="thank-you-image">
+    </div>
+   <div class="result-text">
+    <h6>You selected <span id="rating-message"><!-- Add rating here --></span> out of 5</h6>
+  </div>
+    <h1>Thank you!</h1>
+
+    <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+  </section>
+  
+</body>
+</html>
